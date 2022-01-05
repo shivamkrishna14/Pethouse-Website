@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title house of pets
+    link(rel="icon" href="/static/logo1.png")
+    block scripts 
+    block style
+    link(href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:ital,wght@1,600;1,700&family=Lobster&family=Questrial&display=swap" rel="stylesheet")
+    link(rel="icon" href="/static/logo1.png")
+  
+  nav#navbar
+   ul
+       div#logo 
+             img(src="/static/logo1.png")  
+       li #[a(href="/home") Home]
+       li #[a(href="/about") About us]
+       li #[a(href="/booking") Booking]
+       li #[a(href="/contact") Contact us]
+       div.container
+         form(action="/contact", method="post")
+           input(type="text", placeholder="Username" required)
+           input(type="password", placeholder="Password" required)
+           button(type="submit") Login
+             
+  block content 
+  footer#footer 
+   |copyright @ www.houseofpets.com All rights || Reserved
